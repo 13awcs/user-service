@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 public class UserService {
     private final UserRepository userRepository;
     private final FavoriteRepository favoriteRepository;
-    private final String NEWSPAPER_URL  = "http://localhost:8000/newspaper";
+    private final String NEWSPAPER_URL  = "https://newspaper-service-production.up.railway.app/newspaper";
 
     public ServerResponseDto getProfile(Long userId) {
         Optional<UserEntity> userOpt = userRepository.findById(userId);
