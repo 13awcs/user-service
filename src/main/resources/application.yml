@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://be0yjsye8cfeybgxwnrq-mysql.services.clever-cloud.com:3306/be0yjsye8cfeybgxwnrq
-    username: uuwbg3phobhdxshx
-    password: QD7ebmHJ0DGkYKeUMbNn
+    url: jdbc:mysql://be0yjsye8cfeybgxwnrq-mysql.services.clever-cloud.com:3306/bci99bmwwsxhzkyqiesm
+    username: u69nghkjppxw3ugb
+    password: qqgoeSPjaZtggZapuzKl
 #    url: jdbc:mysql://localhost:3306/user-service
 #    username: root
 #    password: 123456
