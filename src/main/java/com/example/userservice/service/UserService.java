@@ -102,13 +102,12 @@ public class UserService {
         Long userId = likeDto.getUserId();
         Long newsId = likeDto.getNewsId();
         FavoriteEntity favorite = favoriteRepository.findByUserIdAndNewsId(userId, newsId);
-        Long favoriteId = favorite.getId();
-        if (favoriteId == null) {
+        if (favorite == null) {
             favorite.setUserId(likeDto.getUserId());
             favorite.setNewsId(likeDto.getNewsId());
             favoriteRepository.save(favorite);
         } else {
-            favorite.setId(favoriteId);
+            favorite.setId(favorite.getId());
             favorite.setUserId(likeDto.getUserId());
             favorite.setNewsId(likeDto.getNewsId());
             favoriteRepository.save(favorite);
